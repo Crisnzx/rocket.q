@@ -1,0 +1,131 @@
+:root {
+   --black: #0D114F;
+   --white: #FAFAFA;
+   --red: #E83F5B;
+   --light-blue: #E0ECFF;
+   --blue: #3485FF;
+   --background: #FBFCFF;
+   --overlay: #040911;
+   --icons-details: #A5B0C1;
+   
+   --grey: #4D5E77;
+   --blue-grey: #A1B2CD;
+   --medium-grey: #D3D9E2;
+   --light-grey: #E5EAF1;
+
+   --blue-hover: #5699FF;
+   --red-hover: #EA4B65;
+   --grey-hover: #8794A7;
+}
+
+html {
+   /* 10 px */
+   font-size: 62.5%;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   
+}
+
+body {
+   background-color: var(--background);
+   font-family: 'Open sans', sans-serif;
+   font-size: 1.6rem;
+}
+
+h1,h2,h3,h4,h5, .button, .text-button {
+
+   font-family: 'Poppins', sans-serif;
+   color: var(--black);
+} 
+
+h2 {
+   font-size: 2.8rem;
+   margin-bottom: 2.4rem;
+}
+
+p, input {
+   /* font-family: 'Open sans', sans-serif; */
+   font-size: 1.6rem;
+}
+
+input {
+   border-radius: 0.8rem;
+   border: 2px solid var(--blue-grey);
+}
+
+
+.sr-only {
+   position: absolute;
+   height: 1px;
+   width: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip-path: rect(0, 0, 0, 0);
+   white-space: nowrap;
+   border-width: 0;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1.3rem 3.2rem;
+   line-height: 0;
+   border: none;
+   border-radius: 0.8rem;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+   font-size: 1.6rem;
+}
+
+.button img {
+   margin-right: 1rem;
+}
+
+.button.m-reverse img {
+   margin-left: 1rem;
+}
+
+.b-blue {
+   background-color: var(--blue);
+   color: var(--white);
+}
+
+
+.b-blue:hover {
+   background-color: var(--blue-hover);
+}
+
+.b-light {
+   background-color: transparent;
+   color: var(--blue);
+   border: 2px solid var(--blue);
+}
+.b-light:hover {
+   color: var(--blue-hover);
+   border-color: var(--blue-hover);
+}
+
+.b-gray {
+   background-color: var(--light-grey);
+   color: var(--grey);
+}
+
+.b-gray:hover {
+   background-color: var(--grey-hover);
+}
+
+.b-red {
+   background-color: var(--red);
+   color: var(--white);
+}
+
+.b-red:hover {
+   background-color: var(--red-hover);
+}

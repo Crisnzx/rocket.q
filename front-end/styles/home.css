@@ -1,0 +1,114 @@
+
+body {
+   display: grid;
+   grid-template-columns: 40% 60%;
+   grid-template-rows: 114px 1fr;
+   height: 100vh;
+}
+
+header {
+   grid-column: 1 / span 2;
+   /* background: red; */
+   display: flex;
+   align-items: center;
+}
+
+header img {
+   margin-left: 16rem;
+   width: 16.7rem;
+   height: 4.4rem;
+}
+
+.background {
+   background: url('../assets/bg.png') no-repeat center left/contain;
+   
+}
+
+main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+main > div {
+   height: 44.4rem;
+   width: min(36.3rem, 80vw);
+}
+
+#join-lecture .input-group input {
+   padding: 1.3rem 1.6rem;
+   width: 100%;
+   margin-bottom: 1.8rem;
+}
+
+main > div button {
+   width: 100%;
+}
+
+#join-lecture button {
+   margin-bottom: 4rem;
+}
+
+#line {
+   display: flex;
+   align-items: center;
+   margin-bottom: 4rem;
+}
+
+#line div:first-child,
+#line div:last-child {
+   height: 1px;
+   width: 100%;
+   background-color: var(--blue-grey);
+}
+
+#line div:nth-child(2) {
+   color: var(--blue-grey);
+   font-size: 1.6rem;
+   margin: 0 1.35rem;
+}
+
+/* ================== BACKGROUND */
+
+.ball {
+   opacity: 0.1;
+   position: fixed;
+   background-color: var(--blue);
+   display: block;
+   border-radius: 50%;
+}
+
+.ball.b-top {
+   top: -39rem;
+   right: -42rem;
+   height: 63.4rem;
+   width: 63.4rem;
+}
+
+.ball.b-bottom {
+   bottom: -15rem;
+   right: 4rem;
+   height: 21.2rem;
+   width: 21.2rem;
+
+}
+
+@media (max-width: 740px) {
+   body {
+      display: block;
+   }
+
+   header img {
+      margin: 2rem auto;
+   }
+
+   .background {
+      background: url('../assets/bg.png') no-repeat center center/contain;
+      height: 400px;
+      margin-bottom: 3rem;
+   }
+
+   #create-room {
+      padding-bottom: 4rem;
+   }
+}
