@@ -58,6 +58,11 @@ input {
    border: 2px solid var(--blue-grey);
 }
 
+header {
+   display: flex;
+   align-items: center;
+   height: 114px;
+}
 
 .sr-only {
    position: absolute;
@@ -74,8 +79,6 @@ input {
 .button {
    display: flex;
    align-items: center;
-   justify-content: center;
-   padding: 1.3rem 3.2rem;
    line-height: 0;
    border: none;
    border-radius: 0.8rem;
@@ -84,6 +87,22 @@ input {
    font-size: 1.6rem;
 }
 
+.button.b-onlytext {
+   line-height: normal;
+}
+
+.button.p-1 {
+   padding: 0.8rem 2.4rem;
+}
+
+.button.p-2 {
+   padding: 1.3rem 1.6rem;
+}
+
+.button.p-3 {
+   padding: 1.3rem 3.2rem;
+
+}
 .button img {
    margin-right: 1rem;
 }
@@ -128,4 +147,13 @@ input {
 
 .b-red:hover {
    background-color: var(--red-hover);
+}
+
+.container {
+   width: min(112rem, 90vw);
+   margin: 0 auto;
+}
+
+.poppins {
+   font-family: 'Poppins', sans-serif;
 }

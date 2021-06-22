@@ -8,13 +8,15 @@ body {
 
 header {
    grid-column: 1 / span 2;
-   /* background: red; */
-   display: flex;
-   align-items: center;
+   
+}
+
+header a {
+   margin-left: 16rem;
+
 }
 
 header img {
-   margin-left: 16rem;
    width: 16.7rem;
    height: 4.4rem;
 }
@@ -45,7 +47,7 @@ main > div button {
    width: 100%;
 }
 
-#join-lecture button {
+#join-lecture .button {
    margin-bottom: 4rem;
 }
 
@@ -75,7 +77,7 @@ main > div button {
    position: fixed;
    background-color: var(--blue);
    display: block;
-   border-radius: 50%;
+   clip-path: circle();
 }
 
 .ball.b-top {

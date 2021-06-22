@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="./styles/global.css">
+   <link rel="stylesheet" href="./styles/room.css">
+   <title>Rocket.Q</title>
+</head>
+
+<body>
+   <div class="container">
+      <header>
+         <a href="./home.html">
+            <img src="./assets/logo.png" alt="Logo Rocket.Q">
+         </a>
+         <div id="buttons">
+            <button class="button b-light m-reverse p-2">
+               #323243
+               <img src="./assets/copy.svg" alt="Ícone copiar">
+            </button>
+            <a href="./create-room.html" class="button b-blue p-3">
+               <img src="./assets/icon-users-light.svg" alt="Ícone usuários">
+               Criar sala
+            </a>
+         </div>
+      </header>
+      <main>
+         <section id="question-form">
+            <h2>Faça a sua pergunta</h2>
+            <form action="">
+               <div class="input-group">
+                  <label for="question" class="sr-only">O que você quer perguntar?</label>
+                  <textarea placeholder="O que você quer perguntar?" name="question" id="question"></textarea>
+               </div>
+               <div>
+                  <div>
+                     <img src="./assets/lock.svg" alt="Pergunta anônima">
+                     <p class="poppins">Esta pergunta é anônima</p>
+                  </div>
+                  <input class="b-blue button b-onlytext p-1" type="submit" value="Enviar">
+               </div>
+            </form>
+         </section>
+      </main>
+   </div>
+</body>
+
+
+</html>
