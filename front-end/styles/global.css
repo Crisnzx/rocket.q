@@ -51,6 +51,7 @@ h2 {
 p, input {
    /* font-family: 'Open sans', sans-serif; */
    font-size: 1.6rem;
+   color: var(--black);
 }
 
 input {

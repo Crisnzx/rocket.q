@@ -52,7 +52,6 @@ header #buttons button:first-child {
    display: flex;
    align-items: flex-end;
    height: 30px;
-   color: var(--icons-details);
 }
 
 #question-form form > div:last-child div:first-child img {
@@ -61,4 +60,49 @@ header #buttons button:first-child {
 
 #question-form form > div:last-child div:first-child p {
    font-size: 1.4rem;
+   color: var(--icons-details);
+}
+
+/* QUESTIONS */
+
+#questions {
+   margin-top: 1.6rem;
+   margin-bottom: 1.8rem;
+}
+
+#questions .question {
+   background-color: var(--light-blue);
+   padding: 2.5rem;
+   border-radius: 0 0.8rem 0.8rem 0.8rem;
+   display: grid;
+   grid-template-columns: 5.2rem 1fr 28rem;
+   grid-gap: 1.6rem;
+   min-height: 13.6rem;
+   margin-bottom: 0.8rem;
+}
+
+#questions .question #text-question {
+   margin-top: 1.5rem;
+}
+
+#questions .question #options {
+   display: flex;
+   align-items: flex-end;
+}
+
+#questions .question #options div a {
+   display: flex;
+   align-items: center;
+}
+
+#questions .question #options div:first-child {
+   margin-right: 2.4rem;
+}
+
+#questions .question #options div img {
+   margin-right: 1.3rem;
+}
+
+#questions .question #options div a p {
+   color: var(--grey);
 }
