@@ -75,34 +75,60 @@ header #buttons button:first-child {
    padding: 2.5rem;
    border-radius: 0 0.8rem 0.8rem 0.8rem;
    display: grid;
-   grid-template-columns: 5.2rem 1fr 28rem;
+   grid-template-columns: 5.2rem 1fr 27rem;
    grid-gap: 1.6rem;
    min-height: 13.6rem;
    margin-bottom: 0.8rem;
 }
 
-#questions .question #text-question {
-   margin-top: 1.5rem;
+#questions .question .avatar {
+   padding: 1.4rem;
+   background-color: var(--blue);
+   clip-path: circle();
+   height: 5.2rem;
 }
 
-#questions .question #options {
-   display: flex;
-   align-items: flex-end;
-}
 
-#questions .question #options div a {
+#questions .question .text-question p {
+   word-break: break-word;
+   min-height: 52px;
    display: flex;
    align-items: center;
 }
 
-#questions .question #options div:first-child {
-   margin-right: 2.4rem;
+#questions .question .options {
+   display: flex;
+   align-items: flex-end;
 }
 
-#questions .question #options div img {
-   margin-right: 1.3rem;
+#questions .question .options div a {
+   display: flex;
+   align-items: center;
 }
 
-#questions .question #options div a p {
+/* SELECTOR */
+#questions .question .options div + div {
+   margin-left: 2.4rem;
+}
+
+#questions .question .options div img {
+   margin-right: 0.8rem;
+}
+
+#questions .question .options div a p {
    color: var(--grey);
+}
+
+/* Question Read */
+
+#questions .question.read {
+   background-color: rgba(77, 94, 119, 0.1);
+}
+
+#questions .question.read .avatar {
+   background-color: var(--blue-grey);
+}
+
+#questions .question.read .options div:last-child {
+   visibility: hidden;
 }

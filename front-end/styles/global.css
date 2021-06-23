@@ -90,17 +90,18 @@ header {
 
 .button.b-onlytext {
    line-height: normal;
+   display: inline-block;
 }
 
-.button.p-1 {
+.p-1 {
    padding: 0.8rem 2.4rem;
 }
 
-.button.p-2 {
+.p-2 {
    padding: 1.3rem 1.6rem;
 }
 
-.button.p-3 {
+.p-3 {
    padding: 1.3rem 3.2rem;
 
 }
@@ -132,12 +133,12 @@ header {
    border-color: var(--blue-hover);
 }
 
-.b-gray {
+.b-grey {
    background-color: var(--light-grey);
-   color: var(--grey);
+   color: var(--grey); 
 }
 
-.b-gray:hover {
+.b-grey:hover {
    background-color: var(--grey-hover);
 }
 

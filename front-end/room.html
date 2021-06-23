@@ -12,6 +12,7 @@
       rel="stylesheet">
    <link rel="stylesheet" href="./styles/global.css">
    <link rel="stylesheet" href="./styles/room.css">
+   <link rel="stylesheet" href="./styles/modal.css">
    <title>Rocket.Q</title>
 </head>
 
@@ -51,11 +52,13 @@
          </section>
          <section id="questions">
             <div class="question">
-               <img src="./assets/avatar.svg" alt="Foto do usuário">
-               <div id="text-question">
+               <div class="avatar">
+                  <img src="./assets/avatar.svg" alt="Foto do usuário">
+               </div>
+               <div class="text-question">
                   <p>Qual a diferença entre const, var e let no JavaScript?</p>
                </div>
-               <div id="options">
+               <div class="options">
                   <div>
                      <a href="#">
                         <img src="./assets/check.svg" alt="Imagem de checagem">
@@ -71,11 +74,13 @@
                </div>
             </div>
             <div class="question">
-               <img src="./assets/avatar.svg" alt="Foto do usuário">
-               <div id="text-question">
-                  <p>Qual a diferença entre const, var e let no JavaScript?</p>
+               <div class="avatar">
+                  <img src="./assets/avatar.svg" alt="Foto do usuário">
                </div>
-               <div id="options">
+               <div class="text-question">
+                  <p>O que é TypeScript?</p>
+               </div>
+               <div class="options">
                   <div>
                      <a href="#">
                         <img src="./assets/check.svg" alt="Imagem de checagem">
@@ -90,16 +95,18 @@
                   </div>
                </div>
             </div>
-            <div class="question">
-               <img src="./assets/avatar.svg" alt="Foto do usuário">
-               <div id="text-question">
-                  <p>Qual a diferença entre const, var e let no JavaScript?</p>
+            <div class="question read">
+               <div class="avatar">
+                  <img src="./assets/avatar.svg" alt="Foto do usuário">
                </div>
-               <div id="options">
+               <div class="text-question">
+                  <p>O que é JavaScript? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque corrupti aut fugit qui rerum necessitatibus nulla possimus repellat odio nemo suscipit, quaerat est error odit vero inventor</p>
+               </div>
+               <div class="options">
                   <div>
                      <a href="#">
                         <img src="./assets/check.svg" alt="Imagem de checagem">
-                        <p>Marcar como lida</p>
+                        <p>Pergunta lida</p>
                      </a>
                   </div>
                   <div>
@@ -113,6 +120,24 @@
 
          </section>
       </main>
+   </div>
+
+   <!-- MODAL OVERLAY -->
+   <div class="modal-overlay">
+      <div class="modal">
+         <h3>Excluir pergunta</h3>
+         <p>Tem certeza que você deseja excluir esta pergunta?</p>
+         <form action="">
+            <div class="input-group">
+               <label class="sr-only" for="password">Insira a senha</label>
+               <input class="p-1" type="password" id="password" name="password" placeholder="Insira a senha">
+            </div>
+            <div class="buttons">
+               <button href="#" class="button b-grey p-3 b-onlytext">Cancelar</button>
+               <input type="submit" value="Sim, excluir" class="button b-red p-3 b-onlytext">
+            </div>
+         </form>
+      </div>
    </div>
 </body>
 
