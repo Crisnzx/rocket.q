@@ -5,10 +5,15 @@
    height: 100vh;
    top: 0;
    left: 0;
-
    display: flex;
+   
    justify-content: center;
    align-items: center;
+}
+
+.modal-overlay.on {
+   visibility: visible;
+   opacity: 1;
 }
 
 .modal-overlay .modal {

@@ -8,12 +8,6 @@ body {
 
 header {
    grid-column: 1 / span 2;
-   
-}
-
-header a {
-   margin-left: 16rem;
-
 }
 
 header img {
