@@ -16,7 +16,7 @@ header img {
 }
 
 .background {
-   background: url('../assets/bg.png') no-repeat center left/contain;
+   background: url('../images/bg.png') no-repeat center left/contain;
    
 }
 
@@ -99,7 +99,7 @@ main > div button {
    }
 
    .background {
-      background: url('../assets/bg.png') no-repeat center center/contain;
+      background: url('../images/bg.png') no-repeat center center/contain;
       height: 400px;
       margin-bottom: 3rem;
    }

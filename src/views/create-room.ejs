@@ -12,16 +12,20 @@
       rel="stylesheet">
    <link rel="stylesheet" href="./styles/global.css">
    <link rel="stylesheet" href="./styles/home.css">
+
+   <style>
+      main>div {
+         height: auto;
+      }
+   </style>
    <title>Rocket.Q</title>
 </head>
 
 <body>
    <header>
-      <div class="container">
-         <a href="./home.html">
-            <img src="./assets/logo.png" alt="Logo Rocket.Q">
-         </a>
-      </div>
+      <a href="./home.html">
+         <img src="./images/logo.png" alt="Logo Rocket.Q">
+      </a>
    </header>
    <div class="background">
    </div>
@@ -30,29 +34,17 @@
    <main>
       <div>
          <section id="join-lecture">
-            <h2>Entre como participante</h2>
+            <h2>Crie sua própria sala</h2>
             <form action="">
                <div class="input-group">
-                  <label for="room-id" class="sr-only">Código da sala</label>
-                  <input type="number" id="room-id" name="room-id" placeholder="Código da sala">
+                  <label for="room-id" class="sr-only">Insira uma senha</label>
+                  <input type="number" id="room-id" name="room-id" placeholder="Insira uma senha">
                </div>
-               <a href="./room.html" class="button b-blue p-2">
-                  <img src="./assets/icon-login.svg" alt="Ícone de login">
-                  Entrar na sala
+               <a href="room.html" class="button b-blue p-2">
+                  <img src="./images/icon-users-light.svg" alt="Ícone de login">
+                  Criar sala
                </a>
             </form>
-         </section>
-         <div id="line">
-            <div></div>
-            <div>ou</div>
-            <div></div>
-         </div>
-         <section id="create-room">
-            <h2>Crie sua própria sala, de forma fácil</h2>
-            <a href="create-room.html" class="button b-light p-2">
-               <img src="./assets/icon-users.svg" alt="Ícone usuários">
-               Criar sala
-            </a>
          </section>
       </div>
    </main>

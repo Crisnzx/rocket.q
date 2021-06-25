@@ -70,15 +70,27 @@ header #buttons button:first-child {
    margin-bottom: 1.8rem;
 }
 
+
+
 #questions .question {
    background-color: var(--light-blue);
    padding: 2.5rem;
    border-radius: 0 0.8rem 0.8rem 0.8rem;
-   display: grid;
+   /* display: grid;
    grid-template-columns: 5.2rem 1fr 27rem;
-   grid-gap: 1.6rem;
+   grid-gap: 1.6rem; */
    min-height: 13.6rem;
    margin-bottom: 0.8rem;
+}
+
+#questions .question > div:first-child {
+   display: flex;
+}
+
+#questions .question > div:last-child {
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 2rem;
 }
 
 #questions .question .avatar {
@@ -94,6 +106,7 @@ header #buttons button:first-child {
    min-height: 52px;
    display: flex;
    align-items: center;
+   margin-left: 1.6rem;
 }
 
 #questions .question .options {
