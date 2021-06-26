@@ -80,6 +80,7 @@ header {
 .button {
    display: flex;
    align-items: center;
+   justify-content: center;
    line-height: 0;
    border: none;
    border-radius: 0.8rem;

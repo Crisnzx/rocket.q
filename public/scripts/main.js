@@ -21,6 +21,18 @@ modal.cancelButtonUI.addEventListener('click', modal.close);
 
 function handleClick(e, read) {
    
+   const text = read ? 'Marcar como lida' : 'Excluir';
+   const slug = read ? 'check' : 'delete';
+   const aClicked = 
+   e.target.parentElement.classList.contains('check') || e.target.parentElement.classList.contains('delete') 
+   ? e.target.parentElement 
+   : e.target;
+   const roomID = document.querySelector('#room-id').dataset.id;
+   const questionID = aClicked.dataset.id;
+
+   const formUI = document.querySelector('.modal form');
+   formUI.setAttribute('action', `/question/${roomID}/${questionID}/${slug}`)
+
    if(read) {
       modal.OKButtonUI.classList.add('blue');
 
@@ -28,7 +40,6 @@ function handleClick(e, read) {
       modal.OKButtonUI.classList.remove('blue');
       
    }
-   const text = read ? 'Marcar como lida' : 'Excluir';
    modal.titleUI.textContent = `${text} essa pergunta`;
    modal.textUI.textContent = `Tem certeza que você deseja ${text.toLowerCase()} essa pergunta?`;
    modal.OKButtonUI.value = text;

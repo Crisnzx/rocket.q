@@ -10,25 +10,25 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet">
-   <link rel="stylesheet" href="./styles/global.css">
-   <link rel="stylesheet" href="./styles/room.css">
-   <link rel="stylesheet" href="./styles/modal.css">
+   <link rel="stylesheet" href="/styles/global.css">
+   <link rel="stylesheet" href="/styles/room.css">
+   <link rel="stylesheet" href="/styles/modal.css">
    <title>Rocket.Q</title>
 </head>
 
 <body>
    <div class="container">
       <header>
-         <a href="./home.html">
-            <img src="./images/logo.png" alt="Logo Rocket.Q">
+         <a href="/">
+            <img src="/images/logo.png" alt="Logo Rocket.Q">
          </a>
          <div id="buttons">
-            <button class="button b-light m-reverse p-2">
+            <button class="button b-light m-reverse p-2" id="room-id" data-id="323243">
                #323243
-               <img src="./images/copy.svg" alt="Ícone copiar">
+               <img src="/images/copy.svg" alt="Ícone copiar">
             </button>
             <a href="./create-room.html" class="button b-blue p-3">
-               <img src="./images/icon-users-light.svg" alt="Ícone usuários">
+               <img src="/images/icon-users-light.svg" alt="Ícone usuários">
                Criar sala
             </a>
          </div>
@@ -43,7 +43,7 @@
                </div>
                <div>
                   <div>
-                     <img src="./images/lock.svg" alt="Pergunta anônima">
+                     <img src="/images/lock.svg" alt="Pergunta anônima">
                      <p class="poppins">Esta pergunta é anônima</p>
                   </div>
                   <input class="b-blue button b-onlytext p-1" type="submit" value="Enviar">
@@ -54,7 +54,7 @@
             <div class="question">
                <div>
                   <div class="avatar">
-                     <img src="./images/avatar.svg" alt="Foto do usuário">
+                     <img src="/images/avatar.svg" alt="Foto do usuário">
                   </div>
                   <div class="text-question">
                      <p>Qual a diferença entre const, var e let no JavaScript?</p>
@@ -62,14 +62,14 @@
                </div>
                <div class="options">
                   <div>
-                     <a href="#" class="check">
-                        <img src="./images/check.svg" alt="Imagem de checagem">
+                     <a href="#" class="check" data-id="2">
+                        <img src="/images/check.svg" alt="Imagem de checagem">
                         <p>Marcar como lida</p>
                      </a>
                   </div>
                   <div>
-                     <a href="#" class="delete">
-                        <img src="./images/trash.svg" alt="Imagem de uma lixeira">
+                     <a href="#" class="delete" data-id="2">
+                        <img src="/images/trash.svg" alt="Imagem de uma lixeira">
                         <p>Excluir</p>
                      </a>
                   </div>
@@ -79,7 +79,7 @@
                <div>
 
                   <div class="avatar">
-                     <img src="./images/avatar.svg" alt="Foto do usuário">
+                     <img src="/images/avatar.svg" alt="Foto do usuário">
                   </div>
                   <div class="text-question">
                      <p>O que é TypeScript?</p>
@@ -87,14 +87,14 @@
                </div>
                <div class="options">
                   <div>
-                     <a href="#" class="check">
-                        <img src="./images/check.svg" alt="Imagem de checagem">
+                     <a href="#" class="check" data-id="3">
+                        <img src="/images/check.svg" alt="Imagem de checagem">
                         <p>Marcar como lida</p>
                      </a>
                   </div>
                   <div>
-                     <a href="#" class="delete">
-                        <img src="./images/trash.svg" alt="Imagem de uma lixeira">
+                     <a href="#" class="delete" data-id="3">
+                        <img src="/images/trash.svg" alt="Imagem de uma lixeira">
                         <p>Excluir</p>
                      </a>
                   </div>
@@ -103,7 +103,7 @@
             <div class="question read">
                <div>
                   <div class="avatar">
-                     <img src="./images/avatar.svg" alt="Foto do usuário">
+                     <img src="/images/avatar.svg" alt="Foto do usuário">
                   </div>
                   <div class="text-question">
                      <p>O que é JavaScript? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque corrupti aut
@@ -113,14 +113,14 @@
                </div>
                <div class="options">
                   <div>
-                     <a href="#" class="check">
-                        <img src="./images/check.svg" alt="Imagem de checagem">
+                     <a href="#" class="check" data-id="1">
+                        <img src="/images/check.svg" alt="Imagem de checagem" >
                         <p>Pergunta lida</p>
                      </a>
                   </div>
                   <div>
-                     <a href="#"  class="delete">
-                        <img src="./images/trash.svg" alt="Imagem de uma lixeira">
+                     <a href="#"  class="delete" data-id="1">
+                        <img src="/images/trash.svg" alt="Imagem de uma lixeira" >
                         <p>Excluir</p>
                      </a>
                   </div>
@@ -136,7 +136,7 @@
       <div class="modal">
          <h3>Excluir pergunta</h3>
          <p>Tem certeza que você deseja excluir esta pergunta?</p>
-         <form action="">
+         <form action="#" method="POST">
             <div class="input-group">
                <label class="sr-only" for="password">Insira a senha</label>
                <input class="p-1" type="password" id="password" name="password" placeholder="Insira a senha">
@@ -148,7 +148,7 @@
          </form>
       </div>
    </div>
-   <script src="./scripts/main.js" defer type="module"></script>
+   <script src="/scripts/main.js" defer type="module"></script>
 </body>
 
 </html>
