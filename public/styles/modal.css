@@ -36,12 +36,11 @@
 }
 
 .modal-overlay .modal form {
-   width: min(30.2rem, 90vw);
    margin: 0 auto;
 }
 
 .modal-overlay .modal form .input-group > input {
-   width: 100%;
+   width: min(30.2rem, 90vw);
    margin-bottom: 4rem;
 }
 
@@ -50,5 +49,21 @@
    grid-template-columns: 1fr 1fr;
    grid-gap: 0.8rem; */
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
+   
+}
+
+.modal-overlay .modal form .buttons input {
+   margin-left: 0.8rem;
+}
+
+.b-default {
+   background-color: var(--red);
+   color: var(--white);
+}
+
+.b-default.blue {
+   background-color: var(--blue);
+   color: var(--white);
+   
 }
