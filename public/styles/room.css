@@ -142,6 +142,6 @@ header #buttons button:first-child {
    background-color: var(--blue-grey);
 }
 
-#questions .question.read .options div:last-child {
+#questions .question.read .options div:first-child {
    visibility: hidden;
 }
