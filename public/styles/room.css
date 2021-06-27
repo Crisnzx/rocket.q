@@ -6,8 +6,9 @@ header > #buttons {
    display: flex;
 }
 
-header #buttons button:first-child {
+header #buttons div:first-child {
    margin-right: 0.8rem;
+   cursor: auto;
 }
 
 #question-form {
@@ -144,4 +145,57 @@ header #buttons button:first-child {
 
 #questions .question.read .options div:first-child {
    visibility: hidden;
+}
+
+
+/* NO QUESTIONS */
+
+.no-questions {
+
+   width: 28.7rem;
+   margin: 3.6rem auto 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.no-questions h3 {
+   font-size: 1.8rem;
+   font-weight: 600;
+   margin: 1.3rem 0;
+}
+
+.no-questions p {
+   font-size: 1.4rem;
+   color: var(--grey);
+   line-height: 1.9rem;
+   /* text-align: center; */
+}
+
+
+/* RESPONSE */
+
+@media (max-width: 740px) {
+   header {
+      flex-direction: column;
+      height: auto;
+   }
+   
+   header > a {
+      
+      margin: 1.5rem 0;
+   }
+
+   header > #buttons {
+      width: 100%;
+      justify-content: space-around;
+   }
+      
+   header #buttons div:first-child {
+      margin-right: 0;
+      width: 17.1rem;
+      
+   }
 }

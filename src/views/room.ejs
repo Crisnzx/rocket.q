@@ -23,10 +23,10 @@
             <img src="/images/logo.png" alt="Logo Rocket.Q">
          </a>
          <div id="buttons">
-            <button class="button b-light m-reverse p-2" id="room-id" data-id="<%= roomID%>">
+            <div class="button b-light m-reverse p-2" id="room-id" data-id="<%= roomID%>">
                #<%= roomID%>
                <img src="/images/copy.svg" alt="Ícone copiar">
-            </button>
+            </div>
             <a href="/create-room" class="button b-blue p-3">
                <img src="/images/icon-users-light.svg" alt="Ícone usuários">
                Criar sala
@@ -51,6 +51,11 @@
             </form>
          </section>
          <section id="questions">
+
+            <% if (!isQuestions) { %>
+               <%- include('parts/noquestion')%>
+
+            <% }%>
 
             <% questions.forEach(question => { %>
 

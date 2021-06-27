@@ -50,9 +50,14 @@ module.exports = {
       SELECT * FROM questions WHERE room = ${roomID} and read = 1
       `);
 
-      let isQuestions;
+      let isQuestions = true;
 
-      res.render('room', {roomID, questions, questionsRead});
+      if(questions.length == 0 && questionsRead.length == 0) {
+         isQuestions = false;
+         
+      }
+
+      res.render('room', {roomID, questions, questionsRead, isQuestions});
    },
 
    enter(req, res) {
